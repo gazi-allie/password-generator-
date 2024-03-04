@@ -38,7 +38,7 @@ function randomint(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 function generateRandomnum() {
-  return randomint(0, 9);
+  return randomint(0, 10);
 }
 function generateUppercase() {
   return String.fromCharCode(randomint(65, 91));
