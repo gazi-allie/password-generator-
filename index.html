@@ -16,9 +16,9 @@
     <div class="wrapper">
       <h1>PASSWORD GENERATOR</h1>
       <div class="input">
-        <input readonly placeholder="Password"id="inputt" class="display" data-passwordDisplay />
+        <input readonly placeholder="Password"id="inputt" data-passwordDisplay />
         <button class="copyBtn">
-          <span data-copyMsg></span>
+          <p data-copy-msg class="copy-tooltip"></p>
           <img src="./images/copy.svg" alt="" width="23" height="23">
           </button>
          
@@ -26,8 +26,9 @@
       <div class="content">
         <div class="length-con">
           <p>Password Length</p>
-          <p data-lengthNumber>0</p>
+          <p data-lengthNumber></p>
         </div>
+        <input type="range" min="1" max="20" class="slider" step="1" data-lengthslider/>
            <!-- Checkboxes  -->
           <div>
             <div class="check">
@@ -49,7 +50,7 @@
           </div>
 
 
-        <input type="range" min="1" max="20" class="slider" step="1" data-lengthslider/>
+        
         
         <div class="strength-cont">
        <p>Strength</p>
